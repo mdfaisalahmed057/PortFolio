@@ -4,15 +4,14 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-
-const ExperienceCard = ({ experience }) => {
+import Lottie from 'lottie-react';
+import nocap from '../../public/desktop_pc/nocap.json'
+ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -24,11 +23,11 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
-          <img
+          {/* <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
+            className='w-[60%] h-[60%] object-contain' */}
+          {/* /> */}
         </div>
       }
     >
@@ -54,11 +53,15 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
+         </p>
+        <div className='w-[230px] h-[20px]  m-auto   '>
+      <div style={{ backgroundColor: 'transparent' }}>
+       
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Projects.
+          Education.
         </h2>
+      </div>
+    </div>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>

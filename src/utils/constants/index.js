@@ -1,3 +1,4 @@
+import { linkclone } from "../../assets";
 import {
   mobile,
   backend,
@@ -19,9 +20,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  mediumpro,
+  linkclone,
+  nike,
   threejs,
 } from "../assets";
 
@@ -215,7 +216,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: mediumpro,
     source_code_link: "https://github.com/",
   },
   {
@@ -236,7 +237,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: nike,
     source_code_link: "https://github.com/",
   },
   {
@@ -257,7 +258,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: linkclone,
     source_code_link: "https://github.com/",
   },
 ];

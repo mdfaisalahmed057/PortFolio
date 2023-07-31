@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-
+import Portfolio from "./canvas/Developer";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -44,8 +44,8 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Faisal &nbsp;
+            <span className='sm:block hidden'></span>
           </p>
         </Link>
 
@@ -94,6 +94,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+ 
       </div>
     </nav>
   );

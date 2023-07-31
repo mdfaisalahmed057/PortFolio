@@ -19,10 +19,11 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  nike,
+  mediumpro,
+  linkclone,
   threejs,
+ 
 } from "../assets";
 
 export const navLinks = [
@@ -73,7 +74,7 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "React Native",
     icon: typescript,
   },
   {
@@ -97,7 +98,7 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "Sql",
     icon: threejs,
   },
   {
@@ -109,64 +110,30 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
+    name: "MySql",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Pre-University (PUC)",
+    company_name: "Crescent Pu College of Science",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "March 2017 - April 2019",
+    points: "7.4%"
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "B.E (ISE)",
+    company_name: "AMC Engineering College Bnglr",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "Aug 2019 - jun 2023",
+    points: "7.9 CGPA"
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+ 
+ 
 ];
 
 const testimonials = [
@@ -200,65 +167,66 @@ const projects = [
   {
     name: "Car Rent",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I have developed a mobile application for selling Nike shoes, featuring a visually stunning user interface and fortified authentication using JWT. The app utilizes MongoDB as its database for storing and querying data, and incorporates the Redux Toolkit library for state management",
     tags: [
       {
-        name: "react",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Mongodb,Nodejs,Expressjs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Redux Toolkit",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: nike,
+    source_code_link: "https://github.com/mdfaisalahmed057/Nike_App",
   },
   {
-    name: "Job IT",
+    name: "Medium",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This web application empowers users to engage in knowledge sharing on diverse topics like tech, food, and entertainment. It implements secure JWT authentication to safeguard user privacy. With functionalities to create, delete, and edit posts, users maintain complete control over their content, fostering an interactive and personalized experience",
     tags: [
       {
-        name: "react",
+        name: "React,#Nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Mysql",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Express",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: mediumpro,
+    source_code_link: "https://github.com/mdfaisalahmed057/medium",
   },
   {
-    name: "Trip Guide",
+    name: "Blog-Web-App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
+
+    "Developed a static blog web app using Material UI, React.js, and CSS, with responsive design for mobile and desktop devices. Includes dark mode for better readability in low-light settings and a pop post section with a user-friendly navbar and menu bar for smooth navigation."   ,
+     tags: [
       {
-        name: "nextjs",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Redux",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: linkclone,
+    source_code_link: "https://github.com/mdfaisalahmed057/linkdin-clone",
   },
 ];
 
