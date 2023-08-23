@@ -1,15 +1,29 @@
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import Portfolio from "./canvas/Developer";
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visitCount, setVisitCount] = useState(0);
+  const [numberOfVisits, setNumberOfVisits] = useState(0);
 
+  useEffect(() => {
+    const storedVisits = localStorage.getItem("numberOfVisits");
+
+    if (!storedVisits) {
+      localStorage.setItem("numberOfVisits", "0");
+    } else {
+      setNumberOfVisits(+storedVisits+1 );
+      localStorage.setItem("numberOfVisits", (+storedVisits+1).toString());
+    }
+  }, []);
+ 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -25,8 +39,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+   
+
+
   return (
-    <nav
+    <nav 
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
@@ -50,6 +67,16 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <div className="">
+          <a
+            href="#_"
+            className="relative  p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
+          >
+            <span className="w-full h-full  absolute" />
+            <span className=" relative text-white">{`No Of Visitors  ${numberOfVisits}`} </span>
+           </a>
+          </div>
+      
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -62,7 +89,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
+        
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -90,6 +117,7 @@ const Navbar = () => {
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
+                
               ))}
             </ul>
           </div>
