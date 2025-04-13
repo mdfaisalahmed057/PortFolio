@@ -1,3 +1,4 @@
+import { Dodecahedron } from "@react-three/drei";
 import {
   mobile,
   backend,
@@ -23,6 +24,13 @@ import {
   mediumpro,
   linkclone,
   threejs,
+  jobfinder,
+  python,
+  sql,
+  mysql,
+  postman,
+  flask,
+  vscode,
  
 } from "../assets";
 
@@ -54,10 +62,7 @@ const services = [
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const technologies = [
@@ -71,6 +76,10 @@ const technologies = [
   },
   {
     name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "web component",
     icon: javascript,
   },
   {
@@ -99,7 +108,7 @@ const technologies = [
   },
   {
     name: "Sql",
-    icon: threejs,
+    icon: sql,
   },
   {
     name: "git",
@@ -111,6 +120,18 @@ const technologies = [
   },
   {
     name: "MySql",
+    icon: mysql,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Flask",
+    icon: flask,
+  },
+  {
+    name: "GenAI",
     icon: docker,
   },
 ];
@@ -165,7 +186,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Shoes E-commerce APP",
     description:
       "I have developed a mobile application for selling Nike shoes, featuring a visually stunning user interface and fortified authentication using JWT. The app utilizes MongoDB as its database for storing and querying data, and incorporates the Redux Toolkit library for state management",
     tags: [
@@ -207,27 +228,60 @@ const projects = [
     source_code_link: "https://github.com/mdfaisalahmed057/medium",
   },
   {
-    name: "Blog-Web-App",
+    name: "Job Finder Web App",
     description:
-
-    "Developed a static blog web app using Material UI, React.js, and CSS, with responsive design for mobile and desktop devices. Includes dark mode for better readability in low-light settings and a pop post section with a user-friendly navbar and menu bar for smooth navigation."   ,
-     tags: [
+      "Built a job finder web application that scrapes job listings from the web based on user skills. Utilized Python and Flask for the backend, and BeautifulSoup for web scraping. The frontend was developed using React.js, Tailwind CSS, and Framer Motion for animations. Appwrite was used to store user data and manage authentication.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "BeautifulSoup",
+        color: "pink-text-gradient",
+      },
       {
         name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "Redux",
+        name: "TailwindCSS",
         color: "green-text-gradient",
       },
       {
-        name: "Firebase",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
+      {
+        name: "Appwrite",
+        color: "blue-text-gradient",
+      },
     ],
-    image: linkclone,
-    source_code_link: "https://github.com/mdfaisalahmed057/linkdin-clone",
-  },
+    image: jobfinder, // replace with your actual image import name
+    source_code_link: "https://search-job-ai-a4g4.vercel.app/", // replace with your GitHub repo link
+  }
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
+
+
+/**d
+ * react native
+ * sql
+ * python
+ * falsk
+ * cursor
+ * vs code
+ * postman
+ * chatgpt
+ * dalle
+ * genai
+ * google ai studio
+ * midjourney
+ *  */ 
+ 

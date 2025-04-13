@@ -29,8 +29,21 @@ import tesla from "./company/tesla.png";
 import mediumpro from "./mediumpro.png";
 import nike from "./nike.png";
 import linkclone from "./linkclone.png";
+import jobfinder from './jobfinder.png'
 
+import vscode from './vs_code.png'
+import flask from './Flask.png'
+import python from './Python.png'
+import sql from './SQL Developer.png'
+import mysql from './MySQL.png'
+import postman from './Postman.png'
 export {
+  python,
+  sql,
+  mysql,
+  postman,
+  flask,
+  vscode,
   logo,
   backend,
   creator,
@@ -59,4 +72,5 @@ export {
   mediumpro,
   nike,
   linkclone,
+  jobfinder
 };
